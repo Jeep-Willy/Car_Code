@@ -21,7 +21,7 @@ void receiveData() {
       motorControl();
 
       // Send a reply back to the originator client, check for error
-      if (!RadioManager.sendtoWait(ReturnMessage, sizeof(ReturnMessage), from))
+      if (!RadioManager.sendtoWait(ReturnMessage, sizeof(ReturnMessage), CLIENT_ADDRESS))
         Serial.println("sendtoWait failed");
 
     }

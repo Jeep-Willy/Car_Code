@@ -39,4 +39,5 @@ uint8_t buf[RH_NRF24_MAX_MESSAGE_LEN];
  
 
 //  function prototypes
+void receiveData();
 void motorControl();

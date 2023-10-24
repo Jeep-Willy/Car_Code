@@ -6,14 +6,14 @@
 #include <SPI.h>
  
 // Servo Library
-// #include <Servo.h>
+#include <PWMServo.h>
 
 // addresses for radio channels
 #define CLIENT_ADDRESS 1   
 #define SERVER_ADDRESS 2
  
 // Servo Object
-// Servo myServo;
+PWMServo myServo;
 
 // Motor Connections
 int enA = 9;
@@ -21,9 +21,9 @@ int in1 = 7;
 int in2 = 4;
  
 // Servo Connections
-// int enB = 5;
-// int in3 = 7;
-// int in4 = 6;
+int enB = 5;
+int in3 = 7;
+int in4 = 6;
  
 // Create an instance of the radio driver
 RH_NRF24 RadioDriver;

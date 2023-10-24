@@ -19,11 +19,9 @@ PWMServo myServo;
 int enA = 9;
 int in1 = 7;
 int in2 = 4;
- 
-// Servo Connections
-int enB = 5;
-int in3 = 7;
-int in4 = 6;
+
+// Servo connection
+int servPin = 6
  
 // Create an instance of the radio driver
 RH_NRF24 RadioDriver;

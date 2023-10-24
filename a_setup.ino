@@ -23,5 +23,7 @@ void loop()
 {
 
 receiveData();
+motorControl();
+servoControl();
 
 }

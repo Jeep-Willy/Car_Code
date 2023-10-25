@@ -1,7 +1,7 @@
 void motorControl() {
       
   // Set Motor Direction
-  if (buf[2] == 1) {
+  if (buf[1] == 1) {
 
     // Motors are backwards
     digitalWrite(in1, LOW);
@@ -15,6 +15,7 @@ void motorControl() {
 
   }
  
+  // Write values for motor
   analogWrite(enA, buf[0]); 
              
 }

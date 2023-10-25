@@ -11,8 +11,8 @@ void setup()
   digitalWrite(in1, LOW);
 	digitalWrite(in2, LOW);
 
-  // Set servo pin
-  myServo.attach(servPin);
+  // Set servo pin (Must be pin 9 for PWMServo)
+  myServo.attach(servoPin);
   
   // Initialize RadioManager with defaults - 2.402 GHz (channel 2), 2Mbps, 0dBm
   if (!RadioManager.init())
@@ -23,7 +23,5 @@ void loop()
 {
 
 receiveData();
-motorControl();
-servoControl();
 
 }

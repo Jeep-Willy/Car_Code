@@ -16,12 +16,12 @@
 PWMServo myServo;
 
 // Motor Connections
-int enA = 9;
+int enA = 6;
 int in1 = 7;
 int in2 = 4;
 
-// Servo connection
-int servPin = 6
+// Servo connection Must be pin 9 for PWMServo
+int servoPin = 9;
  
 // Create an instance of the radio driver
 RH_NRF24 RadioDriver;

@@ -8,17 +8,17 @@ void receiveData() {
 
     if (RadioManager.recvfromAck(buf, &len, &from)) {
  
-      // Serial Print the values of joystick
+      // Serial Print the values of the motor and servo
       Serial.print("Rear Motor: ");
       Serial.print(buf[0]);
       Serial.print(" Dir: ");
       Serial.println(buf[1]);
       Serial.print("Servo Motor: ");
-      Serial.print(buf[2]);
-      Serial.print(" Dir: ");
-      Serial.println(buf[3]);
+      Serial.println(buf[2]);
 
+      // Call motor/servoControl()
       motorControl();
+      servoControl();
 
       // Send a reply back to the originator client, check for error
       if (!RadioManager.sendtoWait(ReturnMessage, sizeof(ReturnMessage), CLIENT_ADDRESS))

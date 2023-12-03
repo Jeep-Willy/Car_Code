@@ -12,8 +12,8 @@ void receiveData() {
       Serial.print("Rear Motor: ");
       Serial.print(buf[0]);
       Serial.print(" Dir: ");
-      Serial.println(buf[1]);
-      Serial.print("Servo Motor: ");
+      Serial.print(buf[1]);
+      Serial.print(" Servo Motor: ");
       Serial.println(buf[2]);
 
       // Call motor/servoControl()
